@@ -31,9 +31,7 @@ function Section({ title, description, bgImage }) {
     backgroundRepeat: "no-repeat",
     padding: "60px 20px",
     color: "#fff",
-    
     textAlign: "center",
-    
   };
 
   return (
