@@ -2,7 +2,7 @@ import React from "react";
 import './App.css'
 import "bootstrap/dist/css/bootstrap.min.css";
 import Home from './components/Home';
-import LoginForm from "./components/LoginForm1";
+import LoginForm from "./components/RegisterForm";
 import LoginForm2 from "./components/LoginForm2";
 import Influncer from './components/Influencer';
 import Header from './components/Navbar'
