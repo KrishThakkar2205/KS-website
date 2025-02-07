@@ -198,6 +198,18 @@ button {
   background-color: #ff9f33 !important;
 }
 
+.mini-profile-img{
+  height:200px !important;
+  width:200px !important;
+}
+
+@media only screen and (width <= 1024px) {
+  .mini-profile-img{
+    height:150px !important;
+    width:150px !important;
+  }
+}
+
 @media only screen and (width < 600px) {
   .bar-div > .txt{
     font-size: 20px !important;
@@ -228,6 +240,11 @@ button {
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
+  }
+
+  .mini-profile-img{
+    height:125px !important;
+    width:125px !important;
   }
 
   .nav {
@@ -261,6 +278,11 @@ button {
   .cta-button {
     font-size: 14px;
     padding: 8px 16px;
+  }
+
+  .mini-profile-img{
+    height:110px !important;
+    width:110px !important;
   }
 
   .section h2 {
