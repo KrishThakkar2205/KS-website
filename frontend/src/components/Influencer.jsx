@@ -34,9 +34,9 @@ function Infleuncer () {
                         <Card.Body>
                             <Card.Title>{data.name}</Card.Title>
                             <Card.Text>
-                            {data.gender}
+                                {data.gender}
                             </Card.Text>
-                            <Button variant="outline-warning">View Profile</Button>
+                            <Button variant="outline-warning" href={`/profile/${data.id}`}>View Profile</Button>
                         </Card.Body>
                         </Card>
                     </Col>
