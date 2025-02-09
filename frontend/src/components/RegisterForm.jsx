@@ -258,7 +258,7 @@ function LoginForm() {
           </Button>
 
         </Form>)}
-      
+
       <h6 className="text-center text-light mt-3">Already registered? <a href="/login">Login</a></h6>
     </Container>
   );

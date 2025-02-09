@@ -1,10 +1,8 @@
 import React from "react";
-import axios from 'axios';
 
 import { useParams } from "react-router-dom";
 
-import { Container } from "react-bootstrap";
-import { Row, Col } from "react-bootstrap";
+import { Col, Container, Row } from "react-bootstrap";
 
 function Profile () {
 
