@@ -175,6 +175,14 @@ button {
 .nav-link:hover{
   color: #f57c00 !important;
 }
+
+.profile-image {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border: 3px solid #f8b400;
+}
+
 .story {
   background-color: #1e1e1e;
   padding: 20px;
