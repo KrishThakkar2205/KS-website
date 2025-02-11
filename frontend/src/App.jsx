@@ -18,6 +18,7 @@ import axios from "axios";
 
 // App Component
 function App() {
+  
   //Initializing the influencers inside the redux store
   const dispatch = useDispatch();
   const influencers = useSelector(state => state.influencer.influencers);
@@ -41,7 +42,6 @@ function App() {
 
   return (
     <>
-
       <Router>
         <Header />
         <Routes>

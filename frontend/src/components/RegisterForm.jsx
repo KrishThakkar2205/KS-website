@@ -40,24 +40,24 @@ function LoginForm() {
   return (
     <Container className="py-5 bg-dark " fluid>
 
-      <h2 className="text-center mb-4 text-warning">{user === 'Influencer' ? "Register as an Influencer" : "Register as Brand"}</h2>
+      <h2 className="text-center mb-4 orange-text">{user === 'Influencer' ? "Register as an Influencer" : "Register as Brand"}</h2>
       <Row className="mb-3 mt-5">
         {user === 'Influencer' ? (
           <>
             <Col xs={6} className="d-flex justify-content-center">
-              <Button variant="warning" className="w-100" type="button" onClick={() => { setUser('Influencer'); setFormData({ 'user': 'Influencer' }) }}>Influencer</Button>
+              <Button className="w-100 button-class" type="button" onClick={() => { setUser('Influencer'); setFormData({ 'user': 'Influencer' }) }}>Influencer</Button>
             </Col>
             <Col xs={6} className="d-flex justify-content-center">
-              <Button variant="outline-warning" className="w-100" type="button" onClick={() => { setUser('Brand'); setFormData({ 'user': 'Brand' }) }}>Brand</Button>
+              <Button  className="w-100 button-class-rev" type="button" onClick={() => { setUser('Brand'); setFormData({ 'user': 'Brand' }) }}>Brand</Button>
             </Col>
           </>
         ) : (
           <>
             <Col xs={6} className="d-flex justify-content-center">
-              <Button variant="outline-warning" className="w-100" type="button" onClick={() => { setUser('Influencer'); setFormData({ 'user': 'Influencer' }) }}>Influencer</Button>
+              <Button className="w-100 button-class-rev" type="button" onClick={() => { setUser('Influencer'); setFormData({ 'user': 'Influencer' }) }}>Influencer</Button>
             </Col>
             <Col xs={6} className="d-flex justify-content-center">
-              <Button variant="warning" className="w-100" type="button" onClick={() => { setUser('Influencer'); setFormData({ 'user': 'Brand' }) }}>Brand</Button>
+              <Button className="w-100 button-class" type="button" onClick={() => { setUser('Influencer'); setFormData({ 'user': 'Brand' }) }}>Brand</Button>
             </Col>
           </>
         )}
@@ -161,7 +161,7 @@ function LoginForm() {
             </Row>
           </Col>
         </Row>
-        <Button variant="warning" type="submit" className="w-100 " onClick={handleSubmit}>
+        <Button type="submit" className="w-100 button-class" onClick={handleSubmit}>
           Register Now
         </Button>
       </Form>) : (
@@ -253,7 +253,7 @@ function LoginForm() {
               </Row>
             </Col>
           </Row>
-          <Button variant="warning" type="submit" className="w-100 " onClick={handleSubmit}>
+          <Button type="submit" className="w-100 button-class" onClick={handleSubmit}>
             Register Now
           </Button>
 

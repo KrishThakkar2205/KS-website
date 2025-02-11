@@ -128,6 +128,53 @@ button {
   gap: 20px;
 }
 
+.button-class-rev{
+  background-color: transparent !important;
+  color: #f57c00 !important;
+  border-color :#f57c00 !important;
+  border-width: 2px !important;
+  /* transform: rotateY(360); */
+  transition: all 0.3s ease-in-out;
+  border-radius: 0 !important;
+}
+
+.button-class-rev:hover{
+  background-color: #f57c00 !important;
+  color: white !important;
+  border-color :#f57c00 !important;
+  border-width: 2px !important;
+  transition: all 0.3s ease-in-out;
+}
+
+.button-class{
+  background-color: #f57c00 !important;
+  color: white !important;
+  border-color :#f57c00 !important;
+  border-width: 2px !important;
+  border-radius: 0 !important;
+  transition: all 0.3s ease-in-out;
+  
+}
+
+.button-class:hover{
+  background-color: transparent !important;
+  color: #f57c00 !important;
+  border-color :#f57c00 !important;
+  border-width: 2px !important;
+  /* transform: rotateY(360); */
+  transition: all 0.3s ease-in-out;
+}
+
+.orange-text{
+  color : #f57c00 !important;
+}
+
+.nav-link{
+  color: white !important;
+}
+.nav-link:hover{
+  color: #f57c00 !important;
+}
 .story {
   background-color: #1e1e1e;
   padding: 20px;

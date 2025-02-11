@@ -1,22 +1,27 @@
 import React from "react";
+import '../App.css'
+
+// Bootstrap Components
 import { Container, Button, Row, Col, Card } from "react-bootstrap";
+import { Link } from "react-router-dom";
+
+// Images
 import influencerBg from '../images/InfluencerBG.jpg'
 import brandsBg from '../images/brand.jpg'
 import cardLogo from '../images/cardLogo.jpg'
 import card1 from '../images/LivePuffDeal.jpg'
-import { Link } from "react-router-dom";
 
 // Hero Section Component
 function Hero() {
   return (
     <div className="text-center py-5 bg-dark text-white">
       <Container>
-        <h1 className="mb-4">Connect Together, Grow Together</h1>
+        <h1 className="mb-4">Connect Together,<p className="orange-text" style={{display:'inline'}}> Grow Together</p></h1>
         <div>
           <Link to={`/influencer`}>
-            <Button variant="warning" size="lg" className="me-3">For Influencers</Button>
+            <Button variant="" size="lg" className="me-3 button-class-rev">For Influencers</Button>
           </Link>
-          <Button variant="outline-warning" size="lg">For Brands</Button>
+          <Button variant="" className="button-class-rev" size="lg">For Brands</Button>
         </div>
       </Container>
     </div>
@@ -43,7 +48,7 @@ function Section({ title, description, bgImage }) {
         <Col>
           <h2 className="mb-4">{title}</h2>
           <p className="mb-4">{description}</p>
-          <Button variant="light" size="lg">Get Started</Button>
+          <Button variant="" className="button-class" size="lg">Get Started</Button>
         </Col>
       </Row>
     </Container>
@@ -87,9 +92,9 @@ function Home() {
       <Section title="For Influencers" description="Showcase your work and get booked directly by brands." bgImage={influencerBg} />
       <Container fluid className="bar-div bg-dark text-center">
         <div className="vertical-animated">
-          <p className="txt text-warning">Grow Business with Influencer Marketing</p>
-          <p className="txt text-warning">Associated with More than 50 Infleuncer of Ahmedabad</p>
-          <p className="txt text-warning">Infleucner of all Category of Business</p>
+          <p className="txt orange-text">Grow Business with Influencer Marketing</p>
+          <p className="txt orange-text">Associated with More than 50 Infleuncer of Ahmedabad</p>
+          <p className="txt orange-text">Infleucner of all Category of Business</p>
         </div>
       </Container>
       <Section title="For Brands" description="Find the perfect influencer to boost your brand." bgImage={brandsBg} />
