@@ -4,6 +4,9 @@ import '../App.css'
 // Bootstrap Components
 import { Container, Button, Row, Col, Card } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import BlurText from "./BlurText";
+import FadeContent from "./FadeContent";
+import GradientText from "./GradientText";
 
 // Images
 import influencerBg from '../images/InfluencerBG.jpg'
@@ -16,7 +19,19 @@ function Hero() {
   return (
     <div className="text-center py-5 bg-dark text-white">
       <Container>
-        <h1 className="mb-4">Connect Together,<p className="orange-text" style={{display:'inline'}}> Grow Together</p></h1>
+        <h1 className="mb-4">
+        {/* <BlurText
+          text="Connect Together, Grow Together"
+          delay={150}
+          animateBy="words"
+          direction="top"
+          // onAnimationComplete={handleAnimationComplete}
+          className="text-2xl mb-8"
+        /> */}
+        <GradientText colors={["#edf2f4", "#D00000","#DC2F02","#edf2f4","#E85D04","#F48C06","#FAA307","#FFBA08"]} animationSpeed={3} showBorder={false} className="custom-class">
+          Connect Together, Grow Together
+        </GradientText>
+        </h1>
         <div>
           <Link to={`/influencer`}>
             <Button variant="" size="lg" className="me-3 button-class-rev">For Influencers</Button>
@@ -46,8 +61,10 @@ function Section({ title, description, bgImage }) {
     <Container fluid style={sectionStyle}>
       <Row>
         <Col>
+          <FadeContent delay={1200} duration={1500}>
           <h2 className="mb-4">{title}</h2>
           <p className="mb-4">{description}</p>
+          </FadeContent>
           <Button variant="" className="button-class" size="lg">Get Started</Button>
         </Col>
       </Row>

@@ -45,19 +45,19 @@ function LoginForm() {
         {user === 'Influencer' ? (
           <>
             <Col xs={6} className="d-flex justify-content-center">
-              <Button className="w-100 button-class" type="button" onClick={() => { setUser('Influencer'); setFormData({ 'user': 'Influencer' }) }}>Influencer</Button>
+              <Button className="w-100 button-class-form" type="button" onClick={() => { setUser('Influencer'); setFormData({ 'user': 'Influencer' }) }}>Influencer</Button>
             </Col>
             <Col xs={6} className="d-flex justify-content-center">
-              <Button  className="w-100 button-class-rev" type="button" onClick={() => { setUser('Brand'); setFormData({ 'user': 'Brand' }) }}>Brand</Button>
+              <Button  className="w-100 button-class-rev-form" type="button" onClick={() => { setUser('Brand'); setFormData({ 'user': 'Brand' }) }}>Brand</Button>
             </Col>
           </>
         ) : (
           <>
             <Col xs={6} className="d-flex justify-content-center">
-              <Button className="w-100 button-class-rev" type="button" onClick={() => { setUser('Influencer'); setFormData({ 'user': 'Influencer' }) }}>Influencer</Button>
+              <Button className="w-100 button-class-rev-form" type="button" onClick={() => { setUser('Influencer'); setFormData({ 'user': 'Influencer' }) }}>Influencer</Button>
             </Col>
             <Col xs={6} className="d-flex justify-content-center">
-              <Button className="w-100 button-class" type="button" onClick={() => { setUser('Influencer'); setFormData({ 'user': 'Brand' }) }}>Brand</Button>
+              <Button className="w-100 button-class-form" type="button" onClick={() => { setUser('Influencer'); setFormData({ 'user': 'Brand' }) }}>Brand</Button>
             </Col>
           </>
         )}
