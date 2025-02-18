@@ -11,7 +11,7 @@ function Header() {
   return (
     <Navbar bg="dark" variant="dark" expand="lg" className="py-3">
       <Container fluid>
-        <Navbar.Brand href="#home"><img src={Logo} alt="logo" style={{ 'width': '50px' }} />Sync KonnectSphere</Navbar.Brand>
+        <Navbar.Brand href="#home"><img src={Logo} alt="logo" style={{ 'width': '50px' }} /><p className='d-inline' id='brand-name'>Sync KonnectSphere</p></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">

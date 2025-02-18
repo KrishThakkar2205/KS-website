@@ -65,7 +65,8 @@ function Section({ title, description, bgImage }) {
           <h2 className="mb-4">{title}</h2>
           <p className="mb-4">{description}</p>
           </FadeContent>
-          <Button variant="" className="button-class" size="lg">Get Started</Button>
+          <Link to={`/register`}>
+          <Button  className="button-class" size="lg">Get Started</Button></Link>
         </Col>
       </Row>
     </Container>
@@ -85,11 +86,11 @@ function SuccessStories() {
             { Name: 'Puffing - The Live Puff', discreption: 'Sync KonnectSphere was very glad to Complete the urgent requirement of Mr.Nikung (The Owner) with Influencer for their New Outlet', image: card1 }]
             .map((story, index) => (
               <Col key={index} xs={12} sm={6} md={4} >
-                <Card className=" card-hover bg-secondary text-warning ">
+                <Card className=" card-hover bg-dark text-warning ">
                   <Card.Img variant="top" src={story.image} />
                   <Card.Body>
-                    <Card.Title>{story.Name}</Card.Title>
-                    <Card.Text>{story.discreption}</Card.Text>
+                    <Card.Title className="orange-text">{story.Name}</Card.Title>
+                    <Card.Text className="orange-text">{story.discreption}</Card.Text>
                   </Card.Body>
                 </Card>
               </Col>

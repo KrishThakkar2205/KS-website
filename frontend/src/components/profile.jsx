@@ -20,7 +20,7 @@ const Profile = () => {
   }
 
   return (
-    <Card className="shadow-lg p-3 mb-5 bg-secondary rounded" style={{ height: "50vh" }}>
+    <Card className="shadow-lg p-3  bg-secondary rounded" style={{ height: "100vh" }}>
       <Row className="align-items-center">
         {/* Profile Image on the Left */}
         <Col md={4} className="text-center">
@@ -28,6 +28,7 @@ const Profile = () => {
             src={influencer.image || "default.jpg"}
             fluid
             alt="Influencer"
+            // className="profile-image"
           />
         </Col>
 

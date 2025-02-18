@@ -22,6 +22,10 @@ button {
   font-size: 16px;
 }
 
+#brand-name{
+
+}
+
 /* Header */
 .header {
   display: flex;
@@ -428,6 +432,10 @@ button {
 @media (max-width: 480px) {
   .hero h1 {
     font-size: 20px;
+  }
+
+  #brand-name{
+    font-size: small;
   }
 
   .cta-button {
