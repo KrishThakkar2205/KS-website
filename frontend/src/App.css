@@ -171,7 +171,7 @@ button {
 }
 
 .button-class{
-  background-color: #f57c00 !important;
+  background-color: #E85D04 !important;
   color: white !important;
   border-color :#f57c00 !important;
   border-width: 2px !important;
@@ -315,6 +315,43 @@ button {
   border-radius: inherit;
   z-index: 0;
   pointer-events: none;
+}
+
+/* Ensure dropdown opens on hover */
+.custom-dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0; /* Align properly */
+}
+
+/* Prevent the dropdown from closing when clicking */
+.custom-dropdown .dropdown-toggle::after {
+  display: none; /* Hide the default caret */
+}
+
+.filter-btn{
+  background-color: #E85D04 !important;
+  border: none !important;
+}
+
+/* Optional: Improve UI */
+
+
+.custom-dropdown .dropdown-menu {
+  border-radius: 5px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.outer-nav{
+  margin: 0 !important;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: transparent !important;
+}
+
+.inner-nav{
+  background-image: linear-gradient(to right,#F48C06,#FF7300,#E85D04);
+  /* background-color: #f57c00 !important; */
 }
 
 .gradient-overlay::before {

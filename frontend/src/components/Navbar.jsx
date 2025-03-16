@@ -9,8 +9,9 @@ import { Link } from 'react-router-dom';
 
 function Header() {
   return (
-    <Navbar bg="dark" variant="dark" expand="lg" className="py-3">
-      <Container fluid>
+    <Container fluid className=' outer-nav fixed-top'>
+      <Navbar variant="dark" expand="lg" className="py-2 rounded-2 inner-nav">
+      <Container fluid >
         <Navbar.Brand href="#home"><img src={Logo} alt="logo" style={{ 'width': '50px' }} /><p className='d-inline' id='brand-name'>Sync KonnectSphere</p></Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
@@ -23,6 +24,7 @@ function Header() {
         </Navbar.Collapse>
       </Container>
     </Navbar>
+    </Container>
   );
 }
 

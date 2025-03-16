@@ -20,7 +20,7 @@ const Profile = () => {
   }
 
   return (
-    <Card className="shadow-lg p-3  bg-secondary rounded" style={{ height: "100vh" }}>
+    <Card className="  bg-secondary rounded" style={{  paddingTop:'120px', paddingBottom:'120px', paddingLeft:"10px", paddingRight:'10px'}}>
       <Row className="align-items-center">
         {/* Profile Image on the Left */}
         <Col md={4} className="text-center">

@@ -18,16 +18,9 @@ import card1 from '../images/LivePuffDeal.jpg'
 function Hero() {
   return (
     <div className="text-center py-5 bg-dark text-white">
-      <Container>
+      <Container style={{paddingTop:"100px"}}>
         <h1 className="mb-4">
-        {/* <BlurText
-          text="Connect Together, Grow Together"
-          delay={150}
-          animateBy="words"
-          direction="top"
-          // onAnimationComplete={handleAnimationComplete}
-          className="text-2xl mb-8"
-        /> */}
+        
         <GradientText colors={["#edf2f4", "#D00000","#DC2F02","#edf2f4","#E85D04","#F48C06","#FAA307","#FFBA08"]} animationSpeed={3} showBorder={false} className="custom-class">
           Connect Together, Grow Together
         </GradientText>

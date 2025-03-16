@@ -38,7 +38,7 @@ function LoginForm() {
 
 
   return (
-    <Container className="py-5 bg-dark " fluid>
+    <Container style={{paddingTop:'130px', paddingBottom:'10px'}} className=" bg-dark " fluid >
 
       <h2 className="text-center mb-4 orange-text">{user === 'Influencer' ? "Register as an Influencer" : "Register as Brand"}</h2>
       <Row className="mb-3 mt-5">

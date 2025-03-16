@@ -18,7 +18,7 @@ function LoginForm2() {
     }
 
     return (
-        <Container fluid className="py-5 bg-dark" style={{ height: '80vh' }}>
+        <Container fluid className=" bg-dark" style={{ height: '80vh', paddingTop:'150px' }}>
             <h2 className='text-center orange-text mb-3'>Login </h2>
             <Form className="p-4 shadow-sm rounded bg-secondary" onSubmit={handleSubmit}>
                 <Form.Group className="mb-2">
